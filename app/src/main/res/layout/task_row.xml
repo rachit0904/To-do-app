@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/cardview_default_elevation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/taskDisp"
+                android:hint="Task"
+                android:textSize="16sp"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TableRow
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/dueStatus"
+                    android:hint="DUE"
+                    android:layout_toRightOf="@id/taskDisp"
+                    android:visibility="invisible"
+                    android:textSize="15sp"
+                    android:textColorHint="#FF5722"
+
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content">
+                </TextView>
+                <ImageButton
+                    android:id="@+id/priorityBtn"
+                    android:layout_toRightOf="@id/dueStatus"
+                    android:layout_marginLeft="6dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="@drawable/unfilled_star"
+                    android:src="@drawable/unfilled_star"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"/>
+                <ImageButton
+                    android:id="@+id/trashBtn"
+                    android:layout_toRightOf="@id/priorityBtn"
+                    android:background="@drawable/delete"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/delete"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

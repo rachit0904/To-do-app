@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.CollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:contentScrim="#1E1E1E"
+    android:id="@+id/colapsibleToolbar"
+    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/background4" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            app:title="My day"
+            app:subtitle="date"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/back"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ToolbarTheme"
+            />
+</com.google.android.material.appbar.CollapsingToolbarLayout>
