@@ -78,6 +78,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                         TaskItems tskItem = tasks.get(getAdapterPosition());
                         deleteTask(tskItem.getTask());
                         break;
+                    default: {
+                        break;
+                       }
                     }
                 }
         }
